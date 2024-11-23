@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="icon"
       type="image/svg"
       sizes="32x32"
       href="./images/header/logo.svg"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header section -->
-    <header>
-      <a href="">
+    <header class="header">
+      <a class="logo-link header-logo" href="">
         <img
           src="./images/header/logo.svg"
           alt="Barbershop logo"
@@ -23,39 +23,41 @@
           height="76"
         />
       </a>
-      <nav>
+      <nav class="header-nav">
         <ul>
           <li>
-            <a href="#about">About</a>
+            <a class="link" href="#about">About</a>
           </li>
           <li>
-            <a href="#price">Services and prices</a>
+            <a class="link" href="#price">Services and prices</a>
           </li>
           <li>
-            <a href="#team">Barbers</a>
+            <a class="link" href="#team">Barbers</a>
           </li>
           <li>
-            <a href="#contacts">Contacts</a>
+            <a class="link" href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online-booking</button>
+      <a class="header-contact" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="header-btn" type="button">Online-booking</button>
     </header>
-    <main>
+    <main class="main">
       <!-- Hero section -->
-      <section>
-        <ul>
-          <li>
+      <section class="hero">
+        <ul class="hero-list">
+          <li class="hero-item">
             <a
+              class="hero-link"
               href="https://Instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               >Instagram</a
             >
           </li>
-          <li>
+          <li class="hero-item">
             <a
+              class="hero-link"
               href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -63,19 +65,23 @@
             >
           </li>
         </ul>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>
+        <p class="hero-uppertitle">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-undertitle">
           We are experts in trendy men&#10076;s haircuts. We work quickly,
           carefully and with style.
         </p>
-        <ul>
-          <li><button type="button">Back</button></li>
-          <li><button type="button">Forward</button></li>
+        <ul class="hero-slider">
+          <li class="hero-slider-item">
+            <button class="hero-slider-btn" type="button">Back</button>
+          </li>
+          <li class="hero-slider-item">
+            <button class="hero-slider-btn" type="button">Forward</button>
+          </li>
         </ul>
       </section>
       <!-- About section -->
-      <section id="about">
+      <section class="about-section" id="about">
         <ul>
           <li>
             <img
@@ -109,7 +115,7 @@
         <button type="button">Online-booking</button>
       </section>
       <!-- Price section -->
-      <section id="price">
+      <section class="price-section" id="price">
         <p>Spend your time with the best masters</p>
         <h2>Services and prices</h2>
         <ul>
@@ -127,7 +133,7 @@
         <button type="button">Online-booking</button>
       </section>
       <!-- Benefits section -->
-      <section>
+      <section class="benefits-section">
         <ul>
           <li>
             <p>600<sup>+</sup></p>
@@ -154,7 +160,7 @@
         </p>
       </section>
       <!-- Team section -->
-      <section id="team">
+      <section class="team-section" id="team">
         <p>For true enjoyers of the atmosphere</p>
         <h2>Our barbers</h2>
         <ul>
@@ -209,7 +215,7 @@
         </ul>
       </section>
       <!-- Gallery section -->
-      <section>
+      <section class="gallery-section">
         <h2 class="hide">Gallery</h2>
         <p>In Latin, "barba" means "beard"</p>
         <ul>
@@ -248,11 +254,11 @@
         </ul>
       </section>
       <!-- Booking section -->
-      <section>
+      <section class="booking-section">
         <h2>Online-booking</h2>
       </section>
       <!-- Contacts section -->
-      <section id="contacts">
+      <section class="contacts-section" id="contacts">
         <h2>Contacts</h2>
         <address>
           <ul>
@@ -286,7 +292,7 @@
       </section>
     </main>
     <!-- footer section -->
-    <footer>
+    <footer class="footer">
       <p>&#169;Copyright 2020</p>
       <ul>
         <li>
