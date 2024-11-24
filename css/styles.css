@@ -1,3 +1,12 @@
+:root {
+  --primary-font: Open Sans, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
 .header {}
 
 .logo-link {}
@@ -6,7 +15,13 @@
 
 .header-nav {}
 
-.link {}
+.item {
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+}
 
 .header-contact {}
 
@@ -22,9 +37,23 @@
 
 .hero-link {}
 
-.hero-uppertitle {}
+/* .hero-uppertitle {
+    font-family:'Tangerine', sans-serif;
+  color: #2a2a2a;
+  font-size: 32px;
+}
 
-.hero-title {}
+.hero-uppertitle::first-letter {
+    font-family: 'Tahoma', serif;
+    font-size: 32px;
+    color: #f44336; */
+}
+
+.hero-title {
+    color: #ffffff;
+  text-shadow: 10px -3px 20px #ff0000, 4px 7px 5px #000000;
+  font-style: italic;
+}
 
 .hero-undertitle {}
 
@@ -44,7 +73,7 @@
 
 .gallery-section {}
 
-.hide {}
+.hide {display: none;}
 
 .booking-section {}
 
