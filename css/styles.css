@@ -1,10 +1,28 @@
 :root {
   --primary-font: Open Sans, sans-serif;
   --secondary-font: Raleway, sans-serif;
+  --main-text-color: #555;
+  --primary-color: #415167;
+  --accent-color: #c7a17a;
+  --accent-color-light: #f9f5e8;
+  --dark-grey: #151d28;
+  --light-grey: #edf0f5;
+  --title-color-dark: #303030;
+  --title-color-light: #fff;
+  --text-color-price: #9da4bd;
 }
 
 body {
   font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+ul {
+  list-style: none;
 }
 
 .header {}
@@ -16,7 +34,6 @@ body {
 .header-nav {}
 
 .item {
-  display: none;
 }
 
 .link {
