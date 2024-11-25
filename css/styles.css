@@ -1,15 +1,18 @@
 :root {
   --primary-font: Open Sans, sans-serif;
   --secondary-font: Raleway, sans-serif;
-  --main-text-color: #555;
+  --main-text-color: #555555;
   --primary-color: #415167;
-  --accent-color: #c7a17a;
+  --accent-hz-color: #c7a17a;
   --accent-color-light: #f9f5e8;
   --dark-grey: #151d28;
   --light-grey: #edf0f5;
-  --title-color-dark: #303030;
-  --title-color-light: #fff;
+  --text-color-dark: #303030;
+  --text-color-light: #ffffff;
   --text-color-price: #9da4bd;
+  --accent-color: #ff6c00;
+  --accent-color-btn: #ff6c00;
+
 }
 
 body {
@@ -19,13 +22,77 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  background-color: #807575;
+
 }
 
-ul {
+.link {
+  text-decoration: none;
+}
+
+.list {
   list-style: none;
 }
 
-.header {}
+.uppertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--text-color-dark);
+}
+
+.uppertitle-dark {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  
+  color: var(--text-color-dark);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color-btn);
+}
+
+.btn-dark {
+  color: var(--text-color-light);
+}
+
+/* .header-item {
+  font-family: Arial, sans-serif;
+} */
+
+.header-link,
+.header-contact {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--text-color-light);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-color);
+}
+
+
+.header {
+  background-color: #807575;
+}
 
 .logo-link {}
 
@@ -34,10 +101,6 @@ ul {
 .header-nav {}
 
 .item {
-}
-
-.link {
-  text-decoration: none;
 }
 
 .header-contact {}
@@ -63,13 +126,21 @@ ul {
 .hero-uppertitle::first-letter {
     font-family: 'Tahoma', serif;
     font-size: 32px;
-    color: #f44336; */
-}
+    color: #f44336;
+} */
 
-.hero-title {
+/* .hero-title {
     color: #ffffff;
   text-shadow: 10px -3px 20px #ff0000, 4px 7px 5px #000000;
   font-style: italic;
+} */
+
+.hero-title {
+  font-family: var(--secondary-font);
+  font-size: 72px;
+  line-height: 85px; 
+  letter-spacing: 0.05em;
+  color: var(--text-color-light);
 }
 
 .hero-undertitle {}
