@@ -21,8 +21,7 @@ html {
   --text-color-light: #ffffff;
   --text-color-price: #9da4bd;
   --accent-color: #ff6c00;
-  --accent-color-btn: #ff6c00;
-
+  --secondary-background: #f7f7f7;
 }
 
 body {
@@ -32,7 +31,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  background-color: #807575;
+  background-color: var(--text-color-light);
 
 }
 
@@ -67,6 +66,11 @@ button {
   cursor: pointer;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .container {
   width: 1200px;
   margin-right: auto;
@@ -90,22 +94,44 @@ button {
   color: rgba(157, 164, 189, 0.6);
 }
 
+.title {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.title-dark {
+  color: var(--text-color-light);
+}
+
+.undertitle {
+  color: var(--light-grey);
+}
+
 .btn {
+  min-width: 160px;
+  min-height: 40px;
+  padding: 11px 19px;
+
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
-  text-transform: uppercase;
-  
-  color: var(--text-color-dark);
+  text-transform: uppercase;  
+  color: currentColor;
+
   background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
   cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--accent-color-btn);
+  background-color: var(--accent-color);
 }
 
 .btn-dark {
@@ -118,12 +144,19 @@ button {
 
 .header-link,
 .header-contact {
+  
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
 
   color: var(--text-color-light);
+}
+
+.header-link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header-link:hover,
@@ -135,25 +168,44 @@ button {
 
 
 .header {
-  background-color: #807575;
+  background-color: var(--dark-grey);}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
-.logo-link {}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 
-.header-logo {}
+.header-logo {
+  margin-right: 124px;
+}
 
-.header-nav {}
+.header-nav {
+  margin-right: auto;
+}
 
 .item {
 }
 
-.header-contact {}
+.header-contact {
+  margin-right: 40px;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .header-btn {}
 
 .main {}
 
-.hero {}
+.hero {
+  background-color: var(--dark-grey);
+}
 
 .hero-list {}
 
@@ -187,29 +239,69 @@ button {
   color: var(--text-color-light);
 }
 
-.hero-undertitle {}
+.hero-desc {
+  color: var(--dark-grey);
+}
 
-.hero-slider {}
+/* Slider styles */
 
-.hero-slider-item {}
+.slider-controls {}
 
-.hero-slider-btn {}
+.slider-controls-item {}
 
-.about-section {}
+.slider-controls-btn {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: var(--text-color-dark);
 
-.price-section {}
+  background-color: transparent;
+}
 
-.benefits-section {}
+.slider-controls-btn:disabled {
+  color: rgba(157, 164, 189, 0.6);
+}
 
-.team-section {}
+/* About styles */
 
-.gallery-section {}
+.about {}
+
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-right-side {
+  width: 470px;
+}
+
+.price {
+  background-color: var(--dark-grey);
+}
+
+.benefits {}
+
+.team {
+  background-color: var(--secondary-background);
+}
+
+.gallery {}
 
 /* .hide {display: none;} */
 
-.booking-section {}
+.booking {
+  background-color: var(--dark-grey);
+}
 
-.contacts-section {}
+.contacts {
+  background-color: var(--dark-grey);
+}
 
 .footer {}
 

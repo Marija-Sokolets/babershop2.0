@@ -19,7 +19,7 @@
   <body>
     <!-- Header section -->
     <header class="header">
-     <div class="container">
+     <div class="header-container container">
       <a class="header-logo logo link" href="">
         <img
           src="./images/header/logo.svg"
@@ -50,7 +50,7 @@
     </header>
     <main class="main">
       <!-- Hero section -->
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
           <ul class="hero-list list">
             <li class="hero-item item">
@@ -89,9 +89,9 @@
         </div>
       </section>
       <!-- About section -->
-      <section class="about-section" id="about">
-        <div class="container">
-          <ul class="list">
+      <section class="about section" id="about">
+        <div class="container about-container">
+          <ul class="list about-list">
             <li class="item">
               <img
                 src="./images/about/img-1.jpg"
@@ -109,26 +109,35 @@
               />
             </li>
           </ul>
-          <p class="uppertitle">About</p>
-          <h2>Best Barbershop in your city</h2>
-          <p>
-            If you want to add more confidence to your image, you should visit us.
-          </p>
-          <p>
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on the
-            same wave" with clients. Therefore, we are always ready to improve
-            everyone who comes to us!
-          </p>
-          <button class="btn" type="button">Online-booking</button>  
+          <div class="about-right-side">
+            <p class="uppertitle">About</p>
+            <h2 class="title">Best Barbershop in your city</h2>
+            <p class="undertitle">
+              If you want to add more confidence to your image, you should visit us.
+            </p>
+            <p class="about-desc">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our master,
+              you will never be the same again. We are a team that is always "on the
+              same wave" with clients. Therefore, we are always ready to improve
+              everyone who comes to us!
+            </p>
+            <button class="btn" type="button">Online-booking</button>
+          </div> 
         </div>
       </section>
       <!-- Price section -->
-      <section class="price-section" id="price">
+      <section class="price section" id="price">
         <div class="container">
           <p class="uppertitle uppertitle-dark">Spend your time with the best masters</p>
           <h2>Services and prices</h2>
+          <ul class="list">
+            <li class="item">Men&#10076;s haircut from 300 uah.</li>
+            <li class="item">Beard trim from 300 uah.</li>
+            <li class="item">Mustache trim
+              from 200 uah.</li>
+            <li class="item">Straight razor shave from 200 uah.</li>
+          </ul>
           <ul class="list">
             <li class="item">Trainee&#10076;s haircut from 50 uah.</li>
             <li class="item">Haircut under the nozzle from 200 uah.</li>
@@ -139,7 +148,7 @@
         </div>
       </section>
       <!-- Benefits section -->
-      <section class="benefits-section">
+      <section class="benefits section">
         <div class="container">
           <ul class="list">
             <li class="item">
@@ -168,7 +177,7 @@
         </div>
       </section>
       <!-- Team section -->
-      <section class="team-section" id="team">
+      <section class="team section" id="team">
         <div class="container">
           <p class="uppertitle">For true enjoyers of the atmosphere</p>
           <h2>Our barbers</h2>
@@ -225,7 +234,7 @@
         </div>
       </section>
       <!-- Gallery section -->
-      <section class="gallery-section">
+      <section class="gallery section">
         <div class="container">
           <h2 hidden>Gallery</h2>
           <p>In Latin, "barba" means "beard"</p>
@@ -266,13 +275,13 @@
         </div>
       </section>
       <!-- Booking section -->
-      <section class="booking-section">
+      <section class="booking section">
         <div class="container">
           <h2>Online-booking</h2>
         </div>
       </section>
       <!-- Contacts section -->
-      <section class="contacts-section" id="contacts">
+      <section class="contacts section" id="contacts">
         <div class="container">
           <h2>Contacts</h2>
           <address>
